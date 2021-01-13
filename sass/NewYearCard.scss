@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+$color-primary:#ffcc33;
+$color-secondary:#382929;
+$color-tertiaire:#DF3A01;
+$color-fourth:#0040FF;
+$color-fith:#f157d5;
+$color-sixth:#1b7413;
+$color-bkg: linear-gradient( $color-primary 15%, $color-secondary);
+
+@keyframes text-gradient{
+        0%{
+            color:$color-tertiaire;
+             text-shadow: 0 0 .1rem $color-tertiaire;
+        }
+        30%{
+            color:$color-fith;
+            text-shadow: 0 0 .1rem $color-fith;
+        }
+        50%{
+            color:$color-fourth;
+            text-shadow: 0 0 .1rem $color-fourth;
+        }
+        70%{
+            color:$color-sixth;
+            text-shadow: 0 0 .1rem $color-sixth;
+
+        }
+        90%{
+            color: black;
+            text-shadow: none;
+        }
+        100%{
+            color:$color-tertiaire;
+            text-shadow: 0 0 .5rem $color-tertiaire;
+        }
+}
+@keyframes fade-dog{
+    0%{
+        opacity:1;
+        border-radius:30px;
+}
+    15%{
+        opacity:0.8;
+        border-radius:60px;
+    }
+    25%{
+        opacity:0.6;
+        border-radius:90px;
+    }
+    35%{
+        
+        opacity:0.4;
+        border-radius:100px;
+    }
+   
+    45%{
+        opacity:0;
+        border-radius:120px;
+    }
+    55%{
+        opacity:0;
+    }
+    65%{
+        opacity:0.4;
+    }
+    75%{
+        opacity:0.6;
+    }
+    85%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity:1;
+    }
+
+}
+
+body{
+    max-width:100%;
+    margin:0;
+    background:$color-bkg;
+    background-repeat: no-repeat;
+    
+
+}
+.container{
+    position:relative;
+    width:100%; 
+    height:500px; 
+}
+.image-resize-mode {
+    max-width:500px;
+    height:200px;
+}
+.elt{
+    &__text{
+        display:flex;
+        flex-flow:column wrap;
+        margin:auto;
+        text-align:center;
+       
+    }
+}
+span{
+    display: inline-block;
+    line-height: 3rem;
+    font-size:1.5rem;
+    font-family: 'love ya like a sister';
+}
+.word{
+    color:$color-primary;
+    animation: text-gradient 8s linear infinite;
+    -moz-animation:text-gradient 8s linear infinite;
+    -webkit-animation:text-gradient 8s linear infinite;
+    -o-animation:text-gradient 8s linear infinite;
+    -ms-animation:text-gradient 8s linear infinite;
+
+   
+}
+.word:nth-child(1){
+    animation-delay:0.1s;
+    -moz-animation-delay:0.1s;
+    -webkit-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    -ms-animation-delay:.01s;
+}
+.word:nth-child(2){
+    animation-delay:0.2s;
+    -moz-animation-delay:0.2s;
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -ms-animation-delay:.02s;
+}
+.word:nth-child(3){
+    animation-delay:0.3s;
+    -moz-animation-delay:0.3s;
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    -ms-animation-delay:.0.3s;
+}
+.word:nth-child(4){
+    animation-delay:0.4s;
+    -moz-animation-delay:0.4s;
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    -ms-animation-delay:.04s;
+}
+.word:nth-child(5){
+    animation-delay:0.5s;
+    -moz-animation-delay:0.5s;
+    -webkit-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -ms-animation-delay:.05s;
+}
+.word:nth-child(6){
+    animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    -ms-animation-delay:.06s;
+}
+.word:nth-child(7){
+    animation-delay:0.7s;
+    -moz-animation-delay:0.7s;
+    -webkit-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    -ms-animation-delay:.7s;
+}
+.word:nth-child(8){
+    animation-delay:0.8s;
+    -moz-animation-delay:0.8s;
+    -webkit-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -ms-animation-delay:.08s;
+}
+.word:nth-child(9){
+    animation-delay:0.9s;
+    -moz-animation-delay:0.9s;
+    -webkit-animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    -ms-animation-delay:.09s;
+}
+
+.dog{
+    &__elt{
+        width:100%;
+        height:200px;
+
+        & .dog__sad {
+            width:90%;
+            position:absolute;
+            top:75%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            animation: fade-dog ease-in-out 8s 800ms infinite;
+        }
+    }
+}
+.dog__sad img{
+    position:relative;
+}
+.dog{
+    &__elts{
+        width:100%;
+        height:200px;
+
+        & .dog__funny{
+            width:89.9%;
+            position:absolute;
+            top:75%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index:-1;
+        } 
+    }           
+}
+.dog__funny img{
+    position:relative;
+}
+.dog{
+    &__text{
+        position:absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        font-family: 'love ya like a sister';
+        font-size:1.5rem;
+        color:white;
+        animation: fade-dog ease-in-out 8s 800ms infinite;
+    }
+}
+
+.dog{
+    &__text2{
+        position:absolute;
+        top:60%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        font-family: 'love ya like a sister';
+        font-size:1.5rem;
+        color:black; 
+        z-index:-1;    
+    }
+}
+
+/* fireworks animation thanks to Eddie Lin codepen*/
+
+$particles: 50;
+$width: 500;
+$height:500;
+
+// Create the explosion...
+$box-shadow: ();
+$box-shadow2: ();
+@for $i from 0 through $particles {
+  $box-shadow: $box-shadow,
+               random($width)-$width / 2 + px
+               random($height)-$height / 1.2 + px
+               hsl(random(360), 100, 50);
+  $box-shadow2: $box-shadow2, 0 0 #fff
+}
+@mixin keyframes ($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-ms-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animation-delay ($settings) {
+    -moz-animation-delay: $settings;
+    -webkit-animation-delay: $settings;
+    -o-animation-delay: $settings;
+    -ms-animation-delay: $settings;
+    animation-delay: $settings;
+}
+
+@mixin animation-duration ($settings) {
+    -moz-animation-duration: $settings;
+    -webkit-animation-duration: $settings;
+    -o-animation-duration: $settings;
+    -ms-animation-duration: $settings;
+    animation-duration: $settings;
+}
+
+@mixin animation ($settings) {
+    -moz-animation: $settings;
+    -webkit-animation: $settings;
+    -o-animation: $settings;
+    -ms-animation: $settings;
+    animation: $settings;
+}
+
+@mixin transform ($settings) {
+    transform: $settings;
+    -moz-transform: $settings;
+    -webkit-transform: $settings;
+    -o-transform: $settings;
+    -ms-transform: $settings;
+}
+
+
+.pyro > .before, .pyro > .after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: $box-shadow2;
+  @include animation((1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards));
+}
+    
+.pyro > .after {
+  @include animation-delay((1.25s, 1.25s, 1.25s));
+  @include animation-duration((1.25s, 1.25s, 6.25s));
+}
+        
+@include keyframes(bang) {
+  to {
+    box-shadow:$box-shadow;
+  }
+}
+    
+@include keyframes(gravity)  {
+  to {
+    @include transform(translateY(200px));
+    opacity: 0;
+  }
+}
+    
+@include keyframes(position) {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {  
+    margin-top: 10%;
+    margin-left: 70%
+  }
+  60%, 79.9% {  
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {  
+    margin-top: 10%;
+    margin-left: 80%;
+  }
+}
+  
+// Poignée du sabre laser
+.lightsaber .hilt {
+    cursor: pointer;
+    width: 15px;
+    height: 50px;
+    border-bottom: solid 4px grey;
+    border-top: solid 5px grey;
+    border-radius: 5px;
+    z-index: 1;
+    background: rgb(226, 226, 226);
+    background: linear-gradient(
+        to right,
+        rgba(226, 226, 226, 1) 0%,
+        rgba(219, 219, 219, 1) 50%,
+        rgba(209, 209, 209, 1) 51%,
+        rgba(254, 254, 254, 1) 100%
+    );
+
+  // Bouton de la poignée
+    & > .switch {
+        background: #b94a37;
+        width: 3px;
+        height: 10px;
+        position: absolute;
+        bottom: 25px;
+        left: 13px;
+        border-radius: 10px;
+    }
+    & > p{
+        width:100px;
+        font-family:'love ya like a sister';
+        font-size:18px;
+        margin-left:25px;
+        color:white;
+    }
+
+  //Au clic sur la poignée, le laser prend la taille voulue en hauteur
+    &:active + .plasma{
+        transform: scale(1, 1);
+    }
+
+    &:active > .switch {
+        transform: scale(0.7, 1);
+    }
+}
+
+.lightsaber .plasma {
+    transition: transform 300ms;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    bottom: 45px;
+    left: 2px;
+    width: 10px;
+    display: block;
+    transform: scale(1, 0);
+    height: 250px;
+    transform-origin: bottom center;
+  z-index: -1;
+    filter: blur(1px);
+}
+
+.vader {
+    background: linear-gradient(
+        to right,
+        rgba(229, 17, 21, 1) 0%,
+        rgba(254, 254, 254, 1) 30%,
+        rgba(254, 254, 254, 1) 47%,
+        rgba(254, 254, 254, 1) 71%,
+        rgba(229, 17, 21, 1) 100%
+    );
+    box-shadow: 0 0 10px #e51115;
+}
+
+
+.lightsaber-example {
+    display: flex;
+    justify-content: center;
+    padding-top: 400px;
+}
+
+.lightsaber {
+    position: relative;
+}
+
+
