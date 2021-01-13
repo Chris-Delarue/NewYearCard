@@ -193,7 +193,15 @@ span{
             top:75%;
             left:50%;
             transform: translate(-50%, -50%);
+            -moz-transform:translate(-50%, -50%);
+            -webkit-transform:translate(-50%, -50%);
+            -o-transform:translate(-50%, -50%);
+            -ms-transform:translate(-50%, -50%);
             animation: fade-dog ease-in-out 8s 800ms infinite;
+            -moz-animation:fade-dog ease-in-out 8s 800ms infinite;
+            -webkit-animation:fade-dog ease-in-out 8s 800ms infinite;
+            -o-animation:fade-dog ease-in-out 8s 800ms infinite;
+            -ms-animation:fade-dog ease-in-out 8s 800ms infinite;
         }
     }
 }
@@ -211,6 +219,10 @@ span{
             top:75%;
             left:50%;
             transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
             z-index:-1;
         } 
     }           
@@ -224,10 +236,18 @@ span{
         top:60%;
         left:50%;
         transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         font-family: 'love ya like a sister';
         font-size:1.5rem;
         color:white;
         animation: fade-dog ease-in-out 8s 800ms infinite;
+        -moz-animation: fade-dog ease-in-out 8s 800ms infinite;
+        -webkit-animation: fade-dog ease-in-out 8s 800ms infinite;
+        -o-animation: fade-dog ease-in-out 8s 800ms infinite;
+        -ms-animation: fade-dog ease-in-out 8s 800ms infinite;
     }
 }
 
@@ -237,6 +257,10 @@ span{
         top:60%;
         left:50%;
         transform:translate(-50%, -50%);
+        -moz-transform:translate(-50%, -50%);
+        -webkit-transform:translate(-50%, -50%);
+        -o-transform:translate(-50%, -50%);
+        -ms-transform:translate(-50%, -50%);
         font-family: 'love ya like a sister';
         font-size:1.5rem;
         color:black; 
@@ -404,10 +428,18 @@ $box-shadow2: ();
   //Au clic sur la poignée, le laser prend la taille voulue en hauteur
     &:active + .plasma{
         transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
     }
 
     &:active > .switch {
         transform: scale(0.7, 1);
+        -moz-transform: scale(0.7, 1);
+        -webkit-transform: scale(0.7, 1);
+        -o-transform: scale(0.7, 1);
+        -ms-transform: scale(0.7, 1);
     }
 }
 
@@ -420,9 +452,17 @@ $box-shadow2: ();
     width: 10px;
     display: block;
     transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
     height: 250px;
     transform-origin: bottom center;
-  z-index: -1;
+    -moz-transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    -o-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    z-index: -1;
     filter: blur(1px);
 }
 
