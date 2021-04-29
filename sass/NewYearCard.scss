@@ -11,7 +11,7 @@ $color-bkg: linear-gradient( $color-primary 15%, $color-secondary);
 @keyframes text-gradient{
         0%{
             color:$color-tertiaire;
-             text-shadow: 0 0 .1rem $color-tertiaire;
+            text-shadow: 0 0 .1rem $color-tertiaire;
         }
         30%{
             color:$color-fith;
